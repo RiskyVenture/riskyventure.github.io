@@ -1,0 +1,134 @@
+:root {
+    --primary:#000000;
+    --primary-dark:#001036;
+    --primary-light:#004B87;
+    --grey: #53565a;
+    --dark: #171717;
+    --light: #dfdfdf;
+    --white: #fff;
+    --header-height: 50px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira', 'sans-serif';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: box-shadow 250ms linear;
+}
+
+header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px 15px;
+    height: var(--header-height);
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .menu-title {
+    font-size: 24px;
+    color: var(--primary);
+    line-height: var(--header-height);
+}
+
+header nav {
+    display: flex;
+}
+
+header nav .ur-link {
+    color: var(--primary);
+    line-height: var(--header-height);
+    padding: 0 10px;
+    cursor: pointer;
+} 
+
+header nav .ur-link:hover {
+    background-color: var(--light);
+
+}
+
+section {
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    background: #FFF;
+    padding: 80px 25px;
+  }
+
+  .video--section {
+    width: 100%;
+    padding: calc(var(--header-height)*0.7) 25px 80px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--white) 12%, var(--light) 12%);
+  }
+
+.video--section .video {
+    width: 100%;
+    max-width: 300px;
+}
+
+.video--section .video img {
+    width: 100%;
+}
+
+.video--section .content {
+    width: 100%;
+    max-width: 900px;
+}
+
+.video--section .video-container {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    background-color:grey;
+}
+
+.video--section .content h2 {
+    font-size: 32px;
+    color: var(--grey);
+    line-height: 1;
+}
+
+.video--section .content h3 {
+    font-size: 20px;
+    color: var(--grey);
+    line-height: 1;
+    font-weight: 300;
+}
+
+.grid--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding-bottom: 0px;
+  }
+  
+  .grid--section .content {
+    flex: 1;
+    width: 100%;
+    max-width: var(--content-width);
+    padding: 0px 15px;
+  }
+
+.mb-1 {
+    margin-bottom: 10px;
+}
