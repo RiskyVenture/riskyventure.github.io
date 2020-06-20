@@ -1,22 +1,30 @@
-:root {
-    --primary:#000000;
-    --primary-dark:#001036;
-    --primary-light:#004B87;
-    --grey: #53565a;
-    --dark: #171717;
-    --light: #dfdfdf;
-    --white: #fff;
+html {
+    --text-color-normal:hsl(0, 0%, 0%);
+    --menuhover: hsl(0, 0%, 87%);
+    --video-container-background: hsla(196, 100%, 97%, 0.829);
+    --grid-section-background: hsl(0, 0%, 100%);
+    --upperbg: hsl(0, 0%, 99%);
+    --lowerbg: hsl(224, 46%, 74%);
+
     --header-height: 80px;
-    --lowerbg: rgb(158, 174, 219);
+
+
 }
 
+
+html[data-theme="dark"] {
+    --lowerbg:hsl(222, 81%, 15%);
+}
+
+/*Variables need organising...later*/
+
 .blink{
-    font-weight: 300;
-	animation:blink 1.5s steps(2, end) infinite
+    font-weight: 400;
+	animation:blink 2s steps(2, end) infinite
 }
 
 /* colour codes for later
-#071943
+
 #061843
 #000102
 */
@@ -61,7 +69,7 @@ header .header-inner {
 
 header .menu-title {
     font-size: 30px;
-    color: var(--primary);
+    color: var(--text-color-normal);
     line-height: var(--header-height);
 }
 
@@ -70,14 +78,14 @@ header nav {
 }
 
 header nav .ur-link {
-    color: var(--primary);
+    color: var(--text-color-normal);
     line-height: var(--header-height);
     padding: 0 10px;
     cursor: pointer;
 } 
 
 header nav .ur-link:hover {
-    background-color: var(--light);
+    background-color: var(--menuhover);
 
 }
 
@@ -94,7 +102,7 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(253, 253, 253) 12%, var(--lowerbg) 12%);
+    background: linear-gradient(to bottom, var(--upperbg) 12%, var(--lowerbg) 12%);
   }
 
 .video--section .video {
@@ -102,36 +110,21 @@ section {
     max-width: 300px;
 }
 
-
 .video--section .video img {
     width: 100%;
 }
 
 .video--section .content {
     width: 100%;
-    max-width: 900px;
+    max-width: 60%;
 }
 
-.video--section .video-container {
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
+.video--section .content-video-container {
+    width: 100%;;
+    height: 200px;
     margin: auto;
-    background-color: rgba(240, 251, 255, 0.829);
+    background-color: var(--video-container-background);
     border-radius: 25px;
-}
-
-.video--section .content h2 {
-    font-size: 32px;
-    color: var(--grey);
-    line-height: 1;
-}
-
-.video--section .content h3 {
-    font-size: 20px;
-    color: var(--grey);
-    line-height: 1;
-    font-weight: 300;
 }
 
 .grid--section {
@@ -139,14 +132,14 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: white;
+    background: var(--grid-section-background);
     padding-bottom: 0px;
   }
   
   .grid--section .content {
     flex: 1;
     width: 100%;
-    max-width: var(--content-width);
+    max-width: 800;
     padding: 0px 15px;
   }
 
