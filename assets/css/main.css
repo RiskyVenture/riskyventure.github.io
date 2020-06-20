@@ -6,13 +6,33 @@
     --dark: #171717;
     --light: #dfdfdf;
     --white: #fff;
-    --header-height: 80px
+    --header-height: 80px;
+    --lowerbg: rgb(158, 174, 219);
 }
 
+.blink{
+    font-weight: 300;
+	animation:blink 1.5s steps(2, end) infinite
+}
+
+/* colour codes for later
+#071943
+#061843
+#000102
+*/
+  
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@keyframes blink{
+	0%{
+		opacity: 0
+}
+	100%{
+		opacity: 0.7;}
 }
 
 body {
@@ -26,7 +46,6 @@ header {
     right: 0;
     z-index: 999;
     transition: box-shadow 250ms linear;
-    colour: var(--white)
 }
 
 header .header-inner {
@@ -66,7 +85,6 @@ section {
     position: sticky;
     top: 0px;
     height: 100vh;
-    background: #FFF;
     padding: 80px 25px;
   }
 
@@ -76,7 +94,7 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(253, 253, 253) 12%, rgb(158, 174, 219) 12%);
+    background: linear-gradient(to bottom, rgb(253, 253, 253) 12%, var(--lowerbg) 12%);
   }
 
 .video--section .video {
