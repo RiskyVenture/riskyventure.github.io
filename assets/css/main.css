@@ -1,41 +1,36 @@
-:root {
-    --header-height: 80px;
-
+body {
+    --header-height: 70px;
     --menu-top-all: hsl(0, 0%, 0%);
     --menu-right-hover: hsl(0, 0%, 87%);
-
     --upperbg: hsl(0, 0%, 99%);
     --lowerbg: hsl(224, 46%, 74%);
     --video-container-background: hsla(196, 100%, 97%, 0.829);
-
     --grid-section-background: hsl(0, 0%, 100%);
 }
 
-html[data-theme="dark"] {
-    --lowerbg:hsl(222, 81%, 15%);
+.dark {
+
+    --header-height: 70px;
+    --menu-top-all: hsl(0, 0%, 100%);
+    --menu-right-hover: hsl(200, 4%, 15%);
+    --upperbg: hsl(200, 6%, 10%);
+    --lowerbg: hsl(222, 82%, 15%);
+    --video-container-background: hsl(196, 100%, 97%);
+    --grid-section-background: hsl(0, 0%, 100%);
+    transition: all 0.2s ease-in;
 }
 
-/*Variables need organising...later*/
 
-
-
-
-.blink{
-    font-weight: 400;
-	animation:blink 2s steps(2, end) infinite
-}
-
-/* colour codes for later
-
-#061843
-#000102
-*/
-  
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*blink*/
+.blink{
+    font-weight: 400;
+	animation:blink 2s steps(2, end) infinite
+} 
 
 @keyframes blink{
 	0%{
@@ -77,6 +72,7 @@ header .menu-title {
 
 header nav {
     display: flex;
+    align-items: center;
 }
 
 header nav .menu-link {
@@ -88,7 +84,6 @@ header nav .menu-link {
 
 header nav .menu-link:hover {
     background-color: var(--menu-right-hover);
-
 }
 
 section {
