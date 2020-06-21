@@ -1,22 +1,24 @@
-html {
-    --text-color-normal:hsl(0, 0%, 0%);
-    --menuhover: hsl(0, 0%, 87%);
-    --video-container-background: hsla(196, 100%, 97%, 0.829);
-    --grid-section-background: hsl(0, 0%, 100%);
-    --upperbg: hsl(0, 0%, 99%);
-    --lowerbg: hsl(224, 46%, 74%);
-
+:root {
     --header-height: 80px;
 
+    --menu-top-all: hsl(0, 0%, 0%);
+    --menu-right-hover: hsl(0, 0%, 87%);
 
+    --upperbg: hsl(0, 0%, 99%);
+    --lowerbg: hsl(224, 46%, 74%);
+    --video-container-background: hsla(196, 100%, 97%, 0.829);
+
+    --grid-section-background: hsl(0, 0%, 100%);
 }
-
 
 html[data-theme="dark"] {
     --lowerbg:hsl(222, 81%, 15%);
 }
 
 /*Variables need organising...later*/
+
+
+
 
 .blink{
     font-weight: 400;
@@ -69,7 +71,7 @@ header .header-inner {
 
 header .menu-title {
     font-size: 30px;
-    color: var(--text-color-normal);
+    color: var(--menu-top-all);
     line-height: var(--header-height);
 }
 
@@ -77,15 +79,15 @@ header nav {
     display: flex;
 }
 
-header nav .ur-link {
-    color: var(--text-color-normal);
+header nav .menu-link {
+    color: var(--menu-top-all);
     line-height: var(--header-height);
     padding: 0 10px;
     cursor: pointer;
 } 
 
-header nav .ur-link:hover {
-    background-color: var(--menuhover);
+header nav .menu-link:hover {
+    background-color: var(--menu-right-hover);
 
 }
 
@@ -96,7 +98,7 @@ section {
     padding: 80px 25px;
   }
 
-  .video--section {
+  .video-section {
     width: 100%;
     padding: calc(var(--header-height)*0.7) 25px 80px;
     display: flex;
@@ -105,21 +107,21 @@ section {
     background: linear-gradient(to bottom, var(--upperbg) 12%, var(--lowerbg) 12%);
   }
 
-.video--section .video {
+.video-section .video {
     width: 100%;
     max-width: 300px;
 }
 
-.video--section .video img {
+.video-section .video img {
     width: 100%;
 }
 
-.video--section .content {
+.video-section .content {
     width: 100%;
     max-width: 60%;
 }
 
-.video--section .content-video-container {
+.video-section .content-video-container {
     width: 100%;;
     height: 200px;
     margin: auto;
@@ -127,16 +129,16 @@ section {
     border-radius: 25px;
 }
 
-.grid--section {
+.product-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--grid-section-background);
+    background-color: var(--grid-section-background);
     padding-bottom: 0px;
   }
   
-  .grid--section .content {
+  .product-section .content {
     flex: 1;
     width: 100%;
     max-width: 800;
