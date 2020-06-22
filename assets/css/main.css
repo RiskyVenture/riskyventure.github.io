@@ -12,9 +12,9 @@
 
     --menu-top-all: hsl(0, 0%, 0%);
     --menu-right-hover: hsl(197, 40%, 88%);
-    --upperbg: hsl(196, 100%, 97%);
+    --upperbg: hsl(194, 46%, 93%);
     --lowerbg: hsl(224, 46%, 74%);
-    --video-container-background: hsl(196, 100%, 97%);
+    --video-container-background: hsl(194, 46%, 93%);
     --grid-section-background: hsl(196, 100%, 97%);
 }
 
@@ -208,7 +208,7 @@ section {
     background: var(--video-container-background);
     transition: ease-in 200ms;
 
-    border: solid 5px rgb(64, 73, 78);
+    border: solid 5px rgb(0, 0, 0);
     border-top-left-radius: 65px 35px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 25px 51px;
