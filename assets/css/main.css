@@ -196,14 +196,11 @@ section {
     max-width: 600px;
 }
 
-.video-section .thecontainerscontainer {
+.video-section .content-video-container {
     margin: auto;
     padding-top: 20px;
-}
-
-.video-section .content-video-container {
-    width: 100%;;
-    height: 400px;
+    padding-bottom: 20px;
+    width: 100%;
     margin: auto;
     background: var(--video-container-background);
     transition: ease-in 200ms;
