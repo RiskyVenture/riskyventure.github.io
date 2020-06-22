@@ -75,14 +75,28 @@ header .header-wrapper .header-content {
     height: var(--header-height);
 }
 
+header .header-wrapper .header-content .menu-right {
+  font-size: 30px;
+  color: var(--menu-top-all);
+  line-height: var(--header-height);
+  align-items: center;
+}
+
+header .header-wrapper .header-content .menu-brand {
+  font-size: 30px;
+  color: var(--menu-top-all);
+  line-height: var(--header-height);
+  align-items: center;
+}
+
 header .header-image-container {
-    position: relative;
-    max-width: var(--header-image-width);
-    width: 100%;    
-    grid-area: 1 / 1 / 2 / 2;
-    justify-self: center;
-    z-index: 0;
-    top: 5px;
+  position: relative;
+  max-width: var(--header-image-width);
+  width: 100%;    
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: center;
+  z-index: 0;
+  top: 5px;
 }
 
 header .header-image-container img {
@@ -91,24 +105,16 @@ header .header-image-container img {
     z-index: 0;
 }
 
-header .header-wrapper .header-content .menu-brand {
-    font-size: 20px;
-    color: var(--menu-top-all);
-    line-height: var(--header-height);
-    align-items: center;
-}
+
 
 /*
 header .header-wrapper .header-content .menu-brand.h3 {
 }
 */
 
-header .header.content nav {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
 
+
+/* Used as part of more complete menu system
 header .header-content nav .menu-link {
     position: relative;
     color: var(--menu-top-all);
@@ -117,8 +123,8 @@ header .header-content nav .menu-link {
     cursor: pointer;
     z-index: 1;
 } 
-
-header .header-content nav .menu-link:hover {
+*/
+header .header-wrapper .header-content .menu-right:hover {
     background-color: var(--menu-right-hover);
 }
 
@@ -150,7 +156,7 @@ header .header-content nav .menu-link:hover {
     }
   } 
 
-
+/*
   @media screen and (min-width: 350px) {
     .menu-brand h3 {
         transform: scale(1.5) translateX(20px);
@@ -165,7 +171,7 @@ header .header-content nav .menu-link:hover {
     }
   } 
 
-/* ---------------------- SECTIONS FROM HERE-------------- */
+ ---------------------- SECTIONS FROM HERE-------------- */
 
 section {
     position: sticky;
