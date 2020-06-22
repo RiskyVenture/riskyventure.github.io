@@ -12,10 +12,10 @@
 
     --menu-top-all: hsl(0, 0%, 0%);
     --menu-right-hover: hsl(197, 40%, 88%);
-    --upperbg: hsl(0, 0%, 99%);
+    --upperbg: hsl(196, 100%, 97%);
     --lowerbg: hsl(224, 46%, 74%);
     --video-container-background: hsl(196, 100%, 97%);
-    --grid-section-background: hsl(224, 46%, 74%);
+    --grid-section-background: hsl(196, 100%, 97%);
 }
 
 /* Themes that will be inserted to body */
@@ -28,9 +28,7 @@
     --grid-section-background: hsl(196, 48%, 26%);
 }
 
-
-
- 
+/* ---------------------- THEMES AND VARIABLES END HERE-------------- */
 
 /*blink*/
 .blink{
@@ -117,63 +115,6 @@ header .header-content nav .menu-link:hover {
     background-color: var(--menu-right-hover);
 }
 
-section {
-    position: sticky;
-    top: 0px;
-    height: 100vh;
-    padding: 80px 25px;
-  }
-
-  .video-section {
-    width: 100%;
-    padding: calc(20px + var(--header-height)) 25px 80px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    background: var(--lowerbg);
-    transition: ease-in 200ms;
-  }
-
-.video-section .video {
-    width: 100%;
-    max-width: 300px;
-}
-
-.video-section .content {
-    width: 100%;
-    max-width: 600px;
-}
-
-.video-section .content-video-container {
-    width: 100%;;
-    height: 200px;
-    margin: auto;
-    background: var(--video-container-background);
-    border-radius: 25px;
-    transition: ease-in 200ms;
-}
-
-.product-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--grid-section-background);
-    padding-bottom: 0px;
-    transition: all 200ms linear;
-  }
-  
-  .product-section .content {
-    flex: 1;
-    width: 100%;
-    max-width: 800;
-    padding: 0px 15px;
-  }
-
-.mb-1 {
-    margin-bottom: 10px;
-}
-
 @media screen and (max-width: 550px) {
     .translate {
       transform: translateY(15px);
@@ -216,3 +157,91 @@ section {
         transition: 400ms ease-in-out;
     }
   } 
+
+/* ---------------------- SECTIONS FROM HERE-------------- */
+
+section {
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    padding: 80px 25px;
+  }
+
+  .video-section {
+    width: 100%;
+    padding: calc(20px + var(--header-height)) 25px 80px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: var(--lowerbg);
+    transition: ease-in 200ms;
+  }
+
+.video-section .video {
+    width: 100%;
+    max-width: 300px;
+}
+
+.video-section .content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.video-section .thecontainerscontainer {
+    margin: auto;
+    padding-top: 20px;
+}
+
+
+
+.video-section .content-video-container {
+    width: 100%;;
+    height: 400px;
+    margin: auto;
+    background: var(--video-container-background);
+    border-radius: 25px;
+    transition: ease-in 200ms;
+}
+
+/* so many containers, sort this soon) */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 95%;
+    margin: auto;
+    border-radius: 10px;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+     position: absolute; 
+     top: 0; 
+     left: 0; 
+     width: 100%; 
+     height: 100%;
+     border-radius: 10px;
+    }
+/* so many containers, sort this soon) */
+
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--grid-section-background);
+    padding-bottom: 0px;
+    transition: all 200ms linear;
+  }
+  
+  .product-section .content {
+    flex: 1;
+    width: 100%;
+    max-width: 800;
+    padding: 0px 15px;
+  }
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
