@@ -98,13 +98,10 @@ header .header-wrapper .header-content .menu-brand {
     align-items: center;
 }
 
+/*
 header .header-wrapper .header-content .menu-brand.h3 {
-  font-size: 20px;
-  color: var(--menu-top-all);
-  line-height: var(--header-height);
-  align-items: center;
-  -webkit-text-stroke: 1px black;
 }
+*/
 
 header .header.content nav {
     position: relative;
