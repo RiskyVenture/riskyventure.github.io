@@ -11,8 +11,6 @@
     --header-image-width: 270px;
 
     --menu-top-all: hsl(0, 0%, 0%);
-    --menu-left-stroke: hsl(0, 0%, 0%);
-    --menu-left-fill: hsl(0, 0%, 100%);
     --menu-right-hover: hsl(197, 40%, 88%);
     --upperbg: hsl(196, 100%, 97%);
     --lowerbg: hsl(224, 46%, 74%);
@@ -23,12 +21,10 @@
 /* Themes that will be inserted to body */
 .dark {
     --menu-top-all: hsl(0, 0%, 100%);
-    --menu-left-stroke: hsl(0, 0%, 100%);
-    --menu-left-fill: hsl(0, 0%, 0%);
     --menu-right-hover: hsl(224, 43%, 23%);
     --upperbg: hsl(200, 6%, 10%);
     --lowerbg: hsl(224, 43%, 23%);
-    --video-container-background: hsl(185, 30%, 45%);
+    --video-container-background: hsl(184, 50%, 31%);
     --grid-section-background: hsl(196, 48%, 26%);
 }
 
@@ -97,13 +93,17 @@ header .header-image-container img {
 
 header .header-wrapper .header-content .menu-brand {
     font-size: 20px;
-    color: var(--menu-left-fill);
+    color: var(--menu-top-all);
     line-height: var(--header-height);
     align-items: center;
 }
 
-header .header-wrapper .header-content .menu-title {
-  -webkit-text-stroke: 1.5px var(--menu-left-stroke);
+header .header-wrapper .header-content .menu-brand.h3 {
+  font-size: 20px;
+  color: var(--menu-top-all);
+  line-height: var(--header-height);
+  align-items: center;
+  -webkit-text-stroke: 1px black;
 }
 
 header .header.content nav {
@@ -211,7 +211,7 @@ section {
     background: var(--video-container-background);
     transition: ease-in 200ms;
 
-    border: solid 5px rgb(24, 25, 26);
+    border: solid 5px rgb(64, 73, 78);
     border-top-left-radius: 65px 35px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 25px 51px;
