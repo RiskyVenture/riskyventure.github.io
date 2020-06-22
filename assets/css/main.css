@@ -69,7 +69,7 @@ header .header-wrapper .header-content {
     align-items: center;
     padding: 0px 10px;
     width: 100%;
-    max-width: 650px;
+    max-width: 750px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: center;
     height: var(--header-height);
@@ -165,8 +165,6 @@ header .header-content nav .menu-link:hover {
     }
   } 
 
-
-
 /* ---------------------- SECTIONS FROM HERE-------------- */
 
 section {
@@ -193,7 +191,7 @@ section {
 
 .video-section .content {
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
 }
 
 .video-section .content-video-container {
