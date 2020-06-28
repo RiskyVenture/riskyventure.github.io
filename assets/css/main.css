@@ -266,14 +266,14 @@ HAVE A GOOD THINK ABOUT HOW MANY CONTAINERS YOURE USING
     }
 
     @keyframes rainbow{
-      0%{color: orange;}	
-    10%{color: purple;}	
-    20%{color: hsl(0, 72%, 21%);}
-    30%{color: CadetBlue;}
+      0%{color: rgb(129, 84, 1);}	
+    10%{color: rgb(128, 58, 0);}	
+    20%{color: hsl(0, 77%, 25%);}
+    30%{color: rgb(143, 67, 48);}
     40%{color: rgb(175, 115, 3);}
     50%{color: coral;}
-    60%{color: green;}
-    70%{color: rgb(3, 99, 3);}
+    60%{color: rgb(9, 109, 9);}
+    70%{color: rgb(10, 146, 10);}
     80%{color: rgb(139, 13, 80);}
     90%{color: DodgerBlue;}
     100%{color: rgb(138, 93, 11);}
@@ -281,8 +281,8 @@ HAVE A GOOD THINK ABOUT HOW MANY CONTAINERS YOURE USING
 
 
     .next-button:hover {
-      animation: rainbow 8s;
-      animation-iteration-count: infinite;
+      animation: rainbow 6s;
+      animation-iteration-count: 1;
       animation-direction: alternate;
     }
 
