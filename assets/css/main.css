@@ -265,8 +265,25 @@ HAVE A GOOD THINK ABOUT HOW MANY CONTAINERS YOURE USING
       border-bottom-left-radius: 15px 48px; */
     }
 
+    @keyframes rainbow{
+      0%{color: orange;}	
+    10%{color: purple;}	
+    20%{color: hsl(0, 72%, 21%);}
+    30%{color: CadetBlue;}
+    40%{color: rgb(175, 115, 3);}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: rgb(3, 99, 3);}
+    80%{color: rgb(139, 13, 80);}
+    90%{color: DodgerBlue;}
+    100%{color: rgb(138, 93, 11);}
+  }
+
+
     .next-button:hover {
-      font-size: 38px;
+      animation: rainbow 8s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
 
 /* 
