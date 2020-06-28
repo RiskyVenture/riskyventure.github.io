@@ -7,21 +7,26 @@
     <meta name="keywords" content="cats, streams, videos, cute, cat loot, cat bed, merchandise">
     <meta name="description" content="free cat videos">
     <title>catbed.tv</title>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <script src="./assets/js/darkmode.js"></script>
+
 </head>
 
 <body class="">
     <div class="page-wrapper">
 
+
+
+
+        <!-- Header starts-->
         <header>
             <div class="header-wrapper">
 
                 <div class="header-content">
 
                     <div class="menu-brand">
-                        <h3 >catbed.tv<span class="blink">|</span></h3>
+                        <h3>catbed.tv<span class="blink">|</span></h3>
                     </div>
 
                     <div class="menu-right">
@@ -36,23 +41,41 @@
                 </div>
             </div>
         </header>
-
+        <!-- Header finishes -->
 
         <main>
+
+
+            <!-- video section -->
+
+
             <section class="video-section">
-                <div class="video mb-1">
+                <div class="video-outter-container">
+
+
+
+                        <div class="content-video-container">
+                            <div class="embed-container">
+                                <iframe id="iframemain"
+                                    src="https://www.youtube.com/embed/i2YJF4Yhp1I?rel=0;controls=0;autoplay=1"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <button class="next-button" onClick="newVid()"> cats->
+                            </button>
+                        </div>
+
+                        
                 </div>
-
-                <div class="content">
-                    <div class="content-video-container">
-                        <div class='embed-container'><iframe
-                                src='https://www.youtube.com/embed/i2YJF4Yhp1I?rel=0;controls=0;showinfo=0;autoplay=1'
-                                frameborder='0' encrypted-media='1'></iframe></div>
-
-                    </div>
-                </div>
-
             </section>
+
+            
+
+
+<!-- 
             <section class="product-section">
                 <div class="content">
                     <h3>All cats go here </h3>
@@ -64,7 +87,7 @@
                 <footer>
                     <p>&copy; 2020 RiskyVentures</p>
                 </footer>
-            </section>
+            </section> -->
 
 
 
@@ -74,6 +97,8 @@
         </main>
 
     </div>
+    <script src="./assets/js/darkmode.js"></script>
+    <script src="./assets/js/nextvideo.js"></script>
 </body>
 
 </html>
